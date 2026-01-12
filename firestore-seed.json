@@ -1,0 +1,164 @@
+{
+  "usuarios": {
+    "u1": {
+      "nombre": "Usuario Demo",
+      "correo": "demo@example.com",
+      "contrasena": "123456",
+      "avatar": null,
+      "rango": "principiante",
+      "monedas": 0,
+      "nivel": 1,
+      "tipo_cuenta": "free",
+      "fecha_registro": "2025-01-01T00:00:00"
+    }
+  },
+
+  "plantillas": {
+    "p1": {
+      "nombre": "Plantilla Demo",
+      "tipo": "gratuita",
+      "descripcion": "Plantilla de ejemplo",
+      "vista_previa": null,
+      "estructura_base": "{}",
+      "costo_monedas": 0,
+      "fecha_creacion": "2025-01-01T00:00:00"
+    }
+  },
+
+  "notas": {
+    "n1": {
+      "id_usuario": "u1",
+      "id_plantilla": "p1",
+      "titulo": "Nota de ejemplo",
+      "contenido": "Contenido demo",
+      "etiqueta": "general",
+      "estado": "activa",
+      "favorita": false,
+      "fecha_creacion": "2025-01-01T00:00:00",
+      "fecha_modificacion": "2025-01-01T00:00:00"
+    }
+  },
+
+  "categoriaNota": {
+    "c1": {
+      "nombre": "Personal"
+    }
+  },
+
+  "notas_categoriaNota": {
+    "nc1": {
+      "id_nota": "n1",
+      "id_categoriaNota": "c1"
+    }
+  },
+
+  "colaboradores": {
+    "col1": {
+      "id_nota": "n1",
+      "id_usuario": "u1",
+      "rol": "editor"
+    }
+  },
+
+  "resultados_cuestionarios": {
+    "r1": {
+      "id_usuario": "u1",
+      "id_nota": "n1",
+      "aciertos": 0,
+      "total_preguntas": 0,
+      "fecha": "2025-01-01T00:00:00"
+    }
+  },
+
+  "temas_personalizados": {
+    "t1": {
+      "id_usuario": "u1",
+      "fondo": "#ffffff",
+      "tipografia": "Arial",
+      "tamano_texto": 14
+    }
+  },
+
+  "tarjetas": {
+    "ta1": {
+      "id_nota": "n1",
+      "tipo": "flashcard",
+      "pregunta": "¿Ejemplo?",
+      "respuesta": "Sí",
+      "opciones": null,
+      "correcta": null
+    }
+  },
+
+  "recordatorios": {
+    "rec1": {
+      "id_usuario": "u1",
+      "nombre": "Recordatorio demo",
+      "descripcion": "Ejemplo",
+      "fecha": "2025-01-01",
+      "hora": "12:00:00",
+      "estado": false,
+      "prioridad": "media",
+      "notificacion": true,
+      "repeticion": "ninguna",
+      "tipo": "personal",
+      "color": "azul",
+      "fecha_creacion": "2025-01-01T00:00:00"
+    }
+  },
+
+  "categorias_finanza": {
+    "cf1": {
+      "nombre": "General",
+      "tipo": "ambos",
+      "descripcion": "Categoria demo",
+      "color": "gris",
+      "fecha_creacion": "2025-01-01T00:00:00"
+    }
+  },
+
+  "ingresos": {
+    "in1": {
+      "id_usuario": "u1",
+      "id_categoria": "cf1",
+      "monto": 200,
+      "descripcion": "Ingreso demo",
+      "metodo_pago": "efectivo",
+      "origen": "salario",
+      "fecha": "2025-01-01",
+      "hora": "12:00"
+    }
+  },
+
+  "egresos": {
+    "eg1": {
+      "id_usuario": "u1",
+      "id_categoria": "cf1",
+      "monto": 50,
+      "descripcion": "Gasto ejemplo",
+      "metodo_pago": "tarjeta",
+      "destino": "tienda",
+      "fecha": "2025-01-01",
+      "hora": "13:00"
+    }
+  },
+
+  
+
+  "tienda_productos": {
+    "tp1": {
+      "nombre": "Producto demo",
+      "tipo": "recompensa",
+      "costo": 10,
+      "descripcion": "Producto ejemplo"
+    }
+  },
+
+  "usuarios_productos": {
+    "up1": {
+      "id_usuario": "u1",
+      "id_producto": "tp1",
+      "fecha_compra": "2025-01-01T00:00:00"
+    }
+  }
+}
