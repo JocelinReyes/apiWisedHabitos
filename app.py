@@ -1,4 +1,4 @@
-from flask import Flask, jesonify, request
+from flask import Flask, jsonify, request
 from flasgeger import Swagger
 from routes.habitos import habitos_bp
 from routes.categorias_habitos import categorias_bp
